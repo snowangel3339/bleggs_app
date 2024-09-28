@@ -207,7 +207,7 @@ export const UserProvider = ({ children }) => {
       fetchData(id);
     }
     // eslint-disable-next-line 
-  }, []);
+  }, [id]);
 
 
   const sendUserData = async () => {
@@ -221,6 +221,7 @@ export const UserProvider = ({ children }) => {
 
     if (telegramUser) {
       const { id: userId, username, first_name: firstName, last_name: lastName, is_premium } = telegramUser;
+      console.log("telegram User: ", telegramUser);
       const finalUsername = username || `${firstName}_${userId}`;
       const fullNamed = `${firstName} ${lastName}`
 
