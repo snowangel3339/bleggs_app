@@ -21,14 +21,14 @@ export const UserProvider = ({ children }) => {
   const [completedTasks, setCompletedTasks] = useState([]);
   const [claimedReferralRewards, setClaimedReferralRewards] = useState([]);
   const [referrals, setReferrals] = useState([]);
-  // const telegramUser = window.Telegram.WebApp.initDataUnsafe?.user;
-  const telegramUser = {
-    id: "7211451993",
-    username: "super0827",
-    first_name: "High",
-    last_name: "Tech",
-    is_premium: true
-  }
+  const telegramUser = window.Telegram.WebApp.initDataUnsafe?.user;
+  // const telegramUser = {
+  //   id: "7211451993",
+  //   username: "super0827",
+  //   first_name: "High",
+  //   last_name: "Tech",
+  //   is_premium: true
+  // }
   const [fullName, setFullName] = useState('');
   const [username, setUsername] = useState('');
   const [walletAddress, setWalletAddress] = useState('');
